@@ -110,7 +110,9 @@ def getGuess(alreadyGuessed):
 # newGame returns True if the user wants to start a new game and False otherwise
 def newGame():
     print('Do you want to play again? (yes or no)')
-    return input().lower.startswith('y')
+    userResponse = input()
+    if userResponse == 'yes':
+        return True;
 
 print('H A N G M A N')
 wrongLetters = ''
